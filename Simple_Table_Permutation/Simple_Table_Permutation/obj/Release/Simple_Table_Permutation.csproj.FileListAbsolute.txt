@@ -1,0 +1,27 @@
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\EntityFramework.dll
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\System.Data.SQLite.dll
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\EntityFramework.xml
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\System.Data.SQLite.xml
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.csprojAssemblyReference.cache
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.AboutBox.resources
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.Authorization.resources
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.ChangePasswordBox.resources
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.PersonalAccountBox.resources
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.TablePermutation.resources
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.Properties.Resources.resources
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.Registration.resources
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.TablePermutation.ru.resources
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.csproj.GenerateResource.cache
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.csproj.CoreCompileInputs.cache
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.csproj.CopyComplete
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\Простая табличная перестановка.exe.config
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\Простая табличная перестановка.exe
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\Простая табличная перестановка.pdb
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\ru\Простая табличная перестановка.resources.dll
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\ru\Простая табличная перестановка.resources.dll
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Простая табличная перестановка.exe
+C:\Users\AGENT\source\repos\C#\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Простая табличная перестановка.pdb
