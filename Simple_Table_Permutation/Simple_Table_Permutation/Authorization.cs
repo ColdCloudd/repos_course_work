@@ -13,7 +13,7 @@ namespace Simple_Table_Permutation
         {
             InitializeComponent();
             DB = new Database("Data Source=MyDB.db; Version=3");
-           
+            
         }
 
         private void Authorization_Load(object sender, EventArgs e)

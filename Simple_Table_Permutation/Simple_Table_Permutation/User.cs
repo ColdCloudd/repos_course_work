@@ -19,15 +19,8 @@ namespace Simple_Table_Permutation
             this.login = login;
             this.password = password;
             this.role = role;
+        }
 
-        }
-        public bool CheckUser()
-        {
-            if (new Database("Data Source=MyDB.db; Version=3").ValidUser(login, password))
-                return true;
-            else
-                return false;
-        }
         public static string GetHash(string input)
         {
             using (SHA1Managed sHA1Managed = new SHA1Managed())
@@ -40,6 +33,21 @@ namespace Simple_Table_Permutation
                 }
                 return sb.ToString();
             }
+        }
+
+        public bool CheckUser()
+        {
+            return new Database("Data Source=MyDB.db; Version=3").ValidUser(login, password);
+        }
+
+        public string ReadData()
+        {
+            return new Database("Data Source=MyDB.db; Version=3").ReadData(login);
+        }
+
+        public bool SaveData(string _data)
+        {
+            return new Database("Data Source=MyDB.db; Version=3").SaveData(login, _data);
         }
     }
 }

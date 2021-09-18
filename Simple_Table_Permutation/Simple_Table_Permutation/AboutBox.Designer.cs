@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,7 +47,9 @@
             this.linkLabelEmail = new System.Windows.Forms.LinkLabel();
             this.label14 = new System.Windows.Forms.Label();
             this.linkLabelRepository = new System.Windows.Forms.LinkLabel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -173,10 +176,10 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.Location = new System.Drawing.Point(306, 307);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(345, 75);
+            this.label12.Size = new System.Drawing.Size(340, 75);
             this.label12.TabIndex = 12;
-            this.label12.Text = "ТУСУР (Томский государственный\r\n университет систем управления и \r\nрадиоэлектрони" +
-    "ки)";
+            this.label12.Text = "ТУСУР (Томский государственный\r\nуниверситет систем управления и \r\nрадиоэлектроник" +
+    "и)";
             // 
             // label13
             // 
@@ -222,6 +225,11 @@
             this.linkLabelRepository.Text = "Репозиторий GitHub";
             this.linkLabelRepository.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRepository_LinkClicked);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
+            this.errorProvider1.ContainerControl = this;
+            // 
             // AboutBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -245,6 +253,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -254,6 +263,7 @@
             this.Text = "О программе и разработчике";
             this.Load += new System.EventHandler(this.AboutBox_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,5 +288,6 @@
         private System.Windows.Forms.LinkLabel linkLabelEmail;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.LinkLabel linkLabelRepository;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

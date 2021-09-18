@@ -1,4 +1,5 @@
-﻿namespace Simple_Table_Permutation
+﻿using System;
+namespace Simple_Table_Permutation
 {
     public class MyPair
     {
@@ -27,30 +28,22 @@
     {
         public static MyPair TextEncryption(string inputText)
         {
-            int row = 0, column = 0;
+            int x;
+            int mult = inputText.Length;
+            Random rnd = new Random();
+            if (mult < 50)
+                x = rnd.Next((int)(0.25 * mult), (int)(0.5 * mult));
+            else
+                x = rnd.Next((int)(0.01 * mult), (int)(0.15 * mult));
+            int newRow = mult / x;
+            int newCol = mult / newRow;
+            _ = newRow >= newCol ? newRow++ : newCol++;
 
-            while (true)
-            {
-                if (inputText.Length > row * column)
-                {
-                    row++;
-                }
-                else
-                    break;
-
-                if (inputText.Length > row * column)
-                {
-                    column++;
-                }
-                else
-                    break;
-            }
-
-            char[,] strArray = new char[row, column];
+            char[,] strArray = new char[newRow, newCol];
             int k = 0;
-            for (int i = 0; i < row; i++)
+            for (int i = 0; i < newRow; i++)
             {
-                for (int j = 0; j < column; j++)
+                for (int j = 0; j < newCol; j++)
                 {
                     if (inputText.Length > k)
                     {
@@ -62,52 +55,60 @@
                 }
             }
 
-            string[] strOutputArr = new string[row * column];
+            string[] strOutputArr = new string[newRow * newCol];
             int l = 0;
-            for (int i = column - 1; i >= 0; i--)
+            for (int i = newCol - 1; i >= 0; i--)
             {
-                for (int j = 0; j < row; j++)
+                for (int j = 0; j < newRow; j++)
                 {
                     strOutputArr[l] = strArray[j, i].ToString();
                     l++;
                 }
             }
             string outputText = string.Join("", strOutputArr);
-            string key = row.ToString() + "-" + column.ToString();
+            string key = newRow.ToString() + "-" + newCol.ToString();
             MyPair pair = new MyPair(outputText, key);
             return pair;
         }
 
         public static string TextDecryption(string inputText, string key)
         {
-            int row = int.Parse(key.Substring(0, key.IndexOf('-')));
-            int column = int.Parse(key.Substring(key.IndexOf('-') + 1));
-            int k = 0;
-
-            char[,] strArray = new char[row, column];
-            for (int i = 0; i < column; i++)
+            try
             {
-                for (int j = row - 1; j >= 0; j--)
-                {
-                    strArray[j, i] = (char)inputText[k];
-                    k++;
-                }
-            }
+                int row = int.Parse(key.Substring(0, key.IndexOf('-')));
+                int column = int.Parse(key.Substring(key.IndexOf('-') + 1));
+                if (row * column > inputText.Length)
+                    return string.Empty;
 
-            string[] strOutputArr = new string[row * column];
-            int l = 0;
-            for (int i = row - 1; i >= 0; i--)
+                int k = 0;
+                char[,] strArray = new char[row, column];
+                for (int i = 0; i < column; i++)
+                {
+                    for (int j = row - 1; j >= 0; j--)
+                    {
+                        strArray[j, i] = (char)inputText[k];
+                        k++;
+                    }
+                }
+
+                string[] strOutputArr = new string[row * column];
+                int l = 0;
+                for (int i = row - 1; i >= 0; i--)
+                {
+                    for (int j = column - 1; j >= 0; j--)
+                    {
+                        strOutputArr[l] = strArray[i, j].ToString();
+                        l++;
+                    }
+                }
+
+                string outputText = string.Join("", strOutputArr).Trim();
+                return outputText;
+            }
+            catch (Exception)
             {
-                for (int j = column - 1; j >= 0; j--)
-                {
-                    strOutputArr[l] = strArray[i, j].ToString();
-                    l++;
-                }
+                return string.Empty;
             }
-
-            string outputText = string.Join("", strOutputArr).Trim();
-
-            return outputText;
         }
     }
 }

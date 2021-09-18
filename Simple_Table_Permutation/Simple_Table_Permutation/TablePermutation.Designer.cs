@@ -43,6 +43,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.личныйКабинетToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonSaveInFile = new System.Windows.Forms.Button();
+            this.buttonSaveInDB = new System.Windows.Forms.Button();
+            this.buttonLoadFromFile = new System.Windows.Forms.Button();
+            this.buttonLoadFromDB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderKey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderInputMsg)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -126,11 +130,43 @@
             resources.ApplyResources(this.AboutProgramToolStripMenuItem, "AboutProgramToolStripMenuItem");
             this.AboutProgramToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
             // 
+            // buttonSaveInFile
+            // 
+            resources.ApplyResources(this.buttonSaveInFile, "buttonSaveInFile");
+            this.buttonSaveInFile.Name = "buttonSaveInFile";
+            this.buttonSaveInFile.UseVisualStyleBackColor = true;
+            this.buttonSaveInFile.Click += new System.EventHandler(this.buttonSaveInFile_Click);
+            // 
+            // buttonSaveInDB
+            // 
+            resources.ApplyResources(this.buttonSaveInDB, "buttonSaveInDB");
+            this.buttonSaveInDB.Name = "buttonSaveInDB";
+            this.buttonSaveInDB.UseVisualStyleBackColor = true;
+            this.buttonSaveInDB.Click += new System.EventHandler(this.buttonSaveInDB_Click);
+            // 
+            // buttonLoadFromFile
+            // 
+            resources.ApplyResources(this.buttonLoadFromFile, "buttonLoadFromFile");
+            this.buttonLoadFromFile.Name = "buttonLoadFromFile";
+            this.buttonLoadFromFile.UseVisualStyleBackColor = true;
+            this.buttonLoadFromFile.Click += new System.EventHandler(this.buttonLoadFromFile_Click);
+            // 
+            // buttonLoadFromDB
+            // 
+            resources.ApplyResources(this.buttonLoadFromDB, "buttonLoadFromDB");
+            this.buttonLoadFromDB.Name = "buttonLoadFromDB";
+            this.buttonLoadFromDB.UseVisualStyleBackColor = true;
+            this.buttonLoadFromDB.Click += new System.EventHandler(this.buttonLoadFromDB_Click);
+            // 
             // TablePermutation
             // 
-            resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.buttonLoadFromDB);
+            this.Controls.Add(this.buttonLoadFromFile);
+            this.Controls.Add(this.buttonSaveInDB);
+            this.Controls.Add(this.buttonSaveInFile);
             this.Controls.Add(this.buttonDecryptMsg);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -170,6 +206,10 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem AboutProgramToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem личныйКабинетToolStripMenuItem;
+        private System.Windows.Forms.Button buttonSaveInFile;
+        private System.Windows.Forms.Button buttonSaveInDB;
+        private System.Windows.Forms.Button buttonLoadFromFile;
+        private System.Windows.Forms.Button buttonLoadFromDB;
     }
 }
 

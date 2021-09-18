@@ -29,7 +29,8 @@ namespace Simple_Table_Permutation
                    + "username TEXT NOT NULL,"
                    + "login TEXT NOT NULL, "
                    + "password TEXT NOT NULL, "
-                   + "role TEXT NOT NULL) ";
+                   + "role TEXT NOT NULL " 
+                   + "data TEXT)";
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -215,6 +216,62 @@ namespace Simple_Table_Permutation
                 sQLiteConnection.Dispose();
             }
             return true;
+        }
+
+        public bool SaveData(string login, string data)
+        {
+            SQLiteConnection sQLiteConnection = new SQLiteConnection(dataSource);
+            try
+            {
+                sQLiteConnection.Open();
+                if (sQLiteConnection.State == ConnectionState.Open)
+                {
+                    SQLiteCommand cmd = sQLiteConnection.CreateCommand();
+                    cmd.CommandText = "UPDATE users SET data = @data WHERE login = @login";
+                    cmd.Parameters.Add("@login", DbType.String).Value = login;
+                    cmd.Parameters.Add("@data", DbType.String).Value = data;
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("SQLite error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                sQLiteConnection.Dispose();
+            }
+            return true;
+        }
+
+        public string ReadData(string login)
+        {
+            SQLiteConnection sQLiteConnection = new SQLiteConnection(dataSource);
+            try
+            {
+                sQLiteConnection.Open();
+                if (sQLiteConnection.State == ConnectionState.Open)
+                {
+                    SQLiteCommand cmd = sQLiteConnection.CreateCommand();
+                    cmd.CommandText = "SELECT * FROM users WHERE login = @login";
+                    cmd.Parameters.Add("@login", DbType.String).Value = login;
+                    SQLiteDataReader sql_reader = cmd.ExecuteReader();
+                    if (sql_reader.Read())
+                        return sql_reader["data"].ToString();
+                    else
+                        return string.Empty;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("SQLite error: " + ex.Message);
+            }
+            finally
+            {
+                sQLiteConnection.Dispose();
+            }
+            return string.Empty;
         }
     }
 }

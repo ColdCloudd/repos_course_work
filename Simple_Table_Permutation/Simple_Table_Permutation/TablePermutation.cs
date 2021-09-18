@@ -7,6 +7,8 @@ namespace Simple_Table_Permutation
     {
         private string inputText = "";
         private User user;
+        OpenFileDialog openFileDialog = new OpenFileDialog();
+        SaveFileDialog saveFileDialog = new SaveFileDialog();
 
         public TablePermutation(User user)
         {
@@ -20,6 +22,7 @@ namespace Simple_Table_Permutation
                 MessageBox.Show("Ошибка при получении данных пользователя!");
                 this.Close();
             }
+            
         }
 
         private void TablePermutation_Load(object sender, EventArgs e)
@@ -37,6 +40,9 @@ namespace Simple_Table_Permutation
             ToolTip toolTipKey = new ToolTip();
             toolTipKey.SetToolTip(textBoxKey, "Поле ввода/вывода ключа в формате: Х-Х");
 
+            openFileDialog.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
+            saveFileDialog.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
+
         }
 
         private void textBoxMsgInput_TextChanged(object sender, EventArgs e)
@@ -48,6 +54,7 @@ namespace Simple_Table_Permutation
 
         private void buttonEncryptMsg_Click(object sender, EventArgs e)
         {
+            errorProviderKey.Clear();
             if (inputText.Length > 10)
             {
                 var pair = Table_Permutation.TextEncryption(inputText);
@@ -55,21 +62,21 @@ namespace Simple_Table_Permutation
                 textBoxKey.Text = pair.Key;
             }
             else
-            {
                 errorProviderInputMsg.SetError(textBoxMsgInput, "Введено меньше 10 символов!");
-            }
         }
 
         private void buttonDecryptMsg_Click(object sender, EventArgs e)
         {
+            errorProviderKey.Clear();
             if (string.IsNullOrEmpty(textBoxKey.Text))
-            {
                 errorProviderKey.SetError(textBoxKey, "Введите ключ!");
-            }
             else
             {
-                textBoxMsgOutput.Text = Table_Permutation.TextDecryption(inputText, textBoxKey.Text);       // передача зашифрованного текста и 
-
+                string decryptedText = Table_Permutation.TextDecryption(inputText, textBoxKey.Text);
+                if (string.IsNullOrEmpty(decryptedText))
+                    errorProviderKey.SetError(textBoxKey, "Ключ введен неверно!");
+                else
+                    textBoxMsgOutput.Text = decryptedText;
             }
 
         }
@@ -97,5 +104,56 @@ namespace Simple_Table_Permutation
             personalAccountBox.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             personalAccountBox.ShowDialog();
         }
+
+        private void buttonSaveInFile_Click(object sender, EventArgs e)
+        {
+            if (textBoxMsgOutput.Text.Length>10)
+            {
+                if (saveFileDialog.ShowDialog() == DialogResult.Cancel)
+                    return;
+
+                string filename = saveFileDialog.FileName;
+                System.IO.File.WriteAllText(filename, textBoxMsgOutput.Text);
+                MessageBox.Show("Файл сохранен.");
+            }
+            else
+                MessageBox.Show("Необходимо ввести текст!");
+
+        }
+
+        private void buttonLoadFromFile_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            string filename = openFileDialog.FileName;
+            string fileText = System.IO.File.ReadAllText(filename);
+            if (fileText != string.Empty)
+            {
+                textBoxMsgInput.Text = fileText;
+                MessageBox.Show("Файл открыт.");
+            }
+            else
+                MessageBox.Show("Ошибка чтения файла: файл пуст!");
+        }
+
+        private void buttonSaveInDB_Click(object sender, EventArgs e)
+        {
+            if (textBoxMsgOutput.Text.Length < 10)
+                MessageBox.Show("Необходимо ввести текст!");
+            else if (user.SaveData(textBoxMsgOutput.Text))
+                MessageBox.Show("Текст успешно сохранен.");
+            else
+                MessageBox.Show("Ошибка: не удалось сохранить текст!");
+        }
+
+        private void buttonLoadFromDB_Click(object sender, EventArgs e)
+        {
+            string _data = user.ReadData();
+            if (_data != string.Empty)
+                textBoxMsgInput.Text = _data;
+            else
+                MessageBox.Show("Ошибка чтения данных: данные отсутствуют!");
+        }
     }
+
 }

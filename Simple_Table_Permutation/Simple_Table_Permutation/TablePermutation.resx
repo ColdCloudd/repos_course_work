@@ -144,13 +144,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonEncryptMsg.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="textBoxMsgInput.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="textBoxMsgInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 81</value>
+    <value>50, 82</value>
   </data>
   <data name="textBoxMsgInput.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -175,13 +175,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxMsgInput.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="textBoxMsgOutput.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="textBoxMsgOutput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 393</value>
+    <value>50, 556</value>
   </data>
   <data name="textBoxMsgOutput.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -205,7 +205,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxMsgOutput.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="textBoxKey.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -229,7 +229,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxKey.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -259,7 +259,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -268,7 +268,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 53</value>
+    <value>45, 52</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 25</value>
@@ -289,7 +289,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -298,7 +298,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 365</value>
+    <value>45, 529</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 25</value>
@@ -319,7 +319,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="buttonDecryptMsg.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -328,10 +328,10 @@
     <value>NoControl</value>
   </data>
   <data name="buttonDecryptMsg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 286</value>
+    <value>364, 286</value>
   </data>
   <data name="buttonDecryptMsg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 48</value>
+    <value>290, 48</value>
   </data>
   <data name="buttonDecryptMsg.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -349,7 +349,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonDecryptMsg.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <metadata name="errorProviderKey.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>35, 17</value>
@@ -357,32 +357,123 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>918, 584</value>
+    <value>978, 844</value>
+  </data>
+  <data name="buttonLoadFromDB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonLoadFromDB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 432</value>
+  </data>
+  <data name="buttonLoadFromDB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 45</value>
+  </data>
+  <data name="buttonLoadFromDB.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="buttonLoadFromDB.Text" xml:space="preserve">
+    <value>Прочитать из базы данных</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFromDB.Name" xml:space="preserve">
+    <value>buttonLoadFromDB</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFromDB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFromDB.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFromDB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonLoadFromFile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonLoadFromFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 364</value>
+  </data>
+  <data name="buttonLoadFromFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 45</value>
+  </data>
+  <data name="buttonLoadFromFile.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="buttonLoadFromFile.Text" xml:space="preserve">
+    <value>Прочитать файл</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFromFile.Name" xml:space="preserve">
+    <value>buttonLoadFromFile</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFromFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFromFile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFromFile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonSaveInDB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSaveInDB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 432</value>
+  </data>
+  <data name="buttonSaveInDB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 45</value>
+  </data>
+  <data name="buttonSaveInDB.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="buttonSaveInDB.Text" xml:space="preserve">
+    <value>Сохранить в базу данных
+</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveInDB.Name" xml:space="preserve">
+    <value>buttonSaveInDB</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveInDB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveInDB.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveInDB.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonSaveInFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 364</value>
+  </data>
+  <data name="buttonSaveInFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 45</value>
+  </data>
+  <data name="buttonSaveInFile.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="buttonSaveInFile.Text" xml:space="preserve">
+    <value>Сохранить в файл</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveInFile.Name" xml:space="preserve">
+    <value>buttonSaveInFile</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveInFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveInFile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveInFile.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>482, 17</value>
   </metadata>
-  <data name="личныйКабинетToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 29</value>
-  </data>
-  <data name="личныйКабинетToolStripMenuItem.Text" xml:space="preserve">
-    <value>Личный кабинет</value>
-  </data>
-  <data name="AboutProgramToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 29</value>
-  </data>
-  <data name="AboutProgramToolStripMenuItem.Text" xml:space="preserve">
-    <value>О программе и разработчике</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>918, 36</value>
+    <value>978, 36</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -400,7 +491,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8pt</value>
@@ -1576,4 +1667,16 @@
   <metadata name="errorProviderInputMsg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>234, 17</value>
   </metadata>
+  <data name="личныйКабинетToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 29</value>
+  </data>
+  <data name="личныйКабинетToolStripMenuItem.Text" xml:space="preserve">
+    <value>Личный кабинет</value>
+  </data>
+  <data name="AboutProgramToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 29</value>
+  </data>
+  <data name="AboutProgramToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе и разработчике</value>
+  </data>
 </root>
