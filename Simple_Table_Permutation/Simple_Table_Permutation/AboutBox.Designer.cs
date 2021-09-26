@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,9 +46,7 @@
             this.linkLabelEmail = new System.Windows.Forms.LinkLabel();
             this.label14 = new System.Windows.Forms.Label();
             this.linkLabelRepository = new System.Windows.Forms.LinkLabel();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -195,7 +192,7 @@
             // 
             this.linkLabelEmail.AutoSize = true;
             this.linkLabelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabelEmail.Location = new System.Drawing.Point(311, 401);
+            this.linkLabelEmail.Location = new System.Drawing.Point(306, 401);
             this.linkLabelEmail.Name = "linkLabelEmail";
             this.linkLabelEmail.Size = new System.Drawing.Size(229, 25);
             this.linkLabelEmail.TabIndex = 14;
@@ -217,18 +214,13 @@
             // 
             this.linkLabelRepository.AutoSize = true;
             this.linkLabelRepository.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabelRepository.Location = new System.Drawing.Point(311, 165);
+            this.linkLabelRepository.Location = new System.Drawing.Point(306, 165);
             this.linkLabelRepository.Name = "linkLabelRepository";
             this.linkLabelRepository.Size = new System.Drawing.Size(200, 25);
             this.linkLabelRepository.TabIndex = 16;
             this.linkLabelRepository.TabStop = true;
             this.linkLabelRepository.Text = "Репозиторий GitHub";
             this.linkLabelRepository.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRepository_LinkClicked);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
-            this.errorProvider1.ContainerControl = this;
             // 
             // AboutBox
             // 
@@ -263,7 +255,6 @@
             this.Text = "О программе и разработчике";
             this.Load += new System.EventHandler(this.AboutBox_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,6 +279,5 @@
         private System.Windows.Forms.LinkLabel linkLabelEmail;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.LinkLabel linkLabelRepository;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

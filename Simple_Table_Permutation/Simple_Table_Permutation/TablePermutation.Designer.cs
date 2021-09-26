@@ -47,6 +47,7 @@
             this.buttonSaveInDB = new System.Windows.Forms.Button();
             this.buttonLoadFromFile = new System.Windows.Forms.Button();
             this.buttonLoadFromDB = new System.Windows.Forms.Button();
+            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderKey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderInputMsg)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -75,7 +76,7 @@
             // 
             resources.ApplyResources(this.textBoxKey, "textBoxKey");
             this.textBoxKey.Name = "textBoxKey";
-            this.textBoxKey.TextChanged += new System.EventHandler(this.textBoxKey_TextChanged);
+     
             // 
             // label1
             // 
@@ -110,11 +111,11 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.личныйКабинетToolStripMenuItem,
-            this.AboutProgramToolStripMenuItem});
+            this.AboutProgramToolStripMenuItem,
+            this.справкаToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -157,6 +158,12 @@
             this.buttonLoadFromDB.Name = "buttonLoadFromDB";
             this.buttonLoadFromDB.UseVisualStyleBackColor = true;
             this.buttonLoadFromDB.Click += new System.EventHandler(this.buttonLoadFromDB_Click);
+            // 
+            // справкаToolStripMenuItem
+            // 
+            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
+            resources.ApplyResources(this.справкаToolStripMenuItem, "справкаToolStripMenuItem");
+            this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
             // 
             // TablePermutation
             // 
@@ -210,6 +217,7 @@
         private System.Windows.Forms.Button buttonSaveInDB;
         private System.Windows.Forms.Button buttonLoadFromFile;
         private System.Windows.Forms.Button buttonLoadFromDB;
+        private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
     }
 }
 

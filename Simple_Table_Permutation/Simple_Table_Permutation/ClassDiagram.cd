@@ -1,79 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Simple_Table_Permutation.AboutBox" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>8QAAIAAAACAAABAAAICAAAECAAAAEEAAAAAAEABAAAA=</HashCode>
       <FileName>AboutBox.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.Authorization" Collapsed="true">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Position X="2.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAAAAAQICAAAlAAkACAFAADEAAAAQAAAQAAAAAAADA=</HashCode>
       <FileName>Authorization.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.ChangePasswordBox" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="2.75" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAACAACESAAAJIAgACAMEADAAAAAAQBEAAAAAAAARA=</HashCode>
       <FileName>ChangePasswordBox.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.Database" Collapsed="true">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACgAAAAAACEBAAAAgIAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <HashCode>AACgAAAAAACFBAAAAgIAAAAQAAAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Database.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.PersonalAccountBox" Collapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+    <Position X="0.5" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAABgSAAABAAIACBAAACAABAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>PersonalAccountBox.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Simple_Table_Permutation.Program" Collapsed="true">
-    <Position X="4" Y="1.5" Width="1.5" />
+  <Class Name="Simple_Table_Permutation.Program">
+    <Position X="4" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.Registration" Collapsed="true">
-    <Position X="5.75" Y="1.5" Width="1.5" />
+    <Position X="2.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CwAIAIBBgCAAAABAkACBEAQDAIIABAAAAAnQAAIAABA=</HashCode>
       <FileName>Registration.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.MyPair" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+    <Position X="4" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Table_Permutation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.Table_Permutation">
-    <Position X="4" Y="2.5" Width="1.5" />
+    <Position X="2.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Table_Permutation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.TablePermutation">
-    <Position X="5.75" Y="2.5" Width="1.5" />
+    <Position X="4.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ASACAAGAAKAAANgAAACBAAACAhABAAAAAAgEBQAAAQE=</HashCode>
+      <HashCode>BSACAAmAAKAAANEAAECBQAACglABAABAAAgFBRAAAQk=</HashCode>
       <FileName>TablePermutation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Simple_Table_Permutation.User">
     <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABEAAAgAAAACAAAAAgAAEgA=</HashCode>
+      <HashCode>AAAAAAAAAAABAAAAAAAAABEQAAgAAAACAAAAAgAAEgA=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
   </Class>

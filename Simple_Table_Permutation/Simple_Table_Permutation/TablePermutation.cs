@@ -7,8 +7,8 @@ namespace Simple_Table_Permutation
     {
         private string inputText = "";
         private User user;
-        OpenFileDialog openFileDialog = new OpenFileDialog();
-        SaveFileDialog saveFileDialog = new SaveFileDialog();
+        private OpenFileDialog openFileDialog = new OpenFileDialog();
+        private SaveFileDialog saveFileDialog = new SaveFileDialog();
 
         public TablePermutation(User user)
         {
@@ -22,12 +22,14 @@ namespace Simple_Table_Permutation
                 MessageBox.Show("Ошибка при получении данных пользователя!");
                 this.Close();
             }
-            
+
         }
 
         private void TablePermutation_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Добро пожаловать " + user.username + "!");
+            this.Width = 940;
+            this.Height = 700;
+            MessageBox.Show(this, "Добро пожаловать " + user.username + "!");
 
             textBoxMsgInput.TextChanged += textBoxMsgInput_TextChanged;
 
@@ -86,11 +88,6 @@ namespace Simple_Table_Permutation
             Application.Exit();
         }
 
-        private void textBoxKey_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox aboutBox = new AboutBox();
@@ -107,7 +104,7 @@ namespace Simple_Table_Permutation
 
         private void buttonSaveInFile_Click(object sender, EventArgs e)
         {
-            if (textBoxMsgOutput.Text.Length>10)
+            if (textBoxMsgOutput.Text.Length > 10)
             {
                 if (saveFileDialog.ShowDialog() == DialogResult.Cancel)
                     return;
@@ -154,6 +151,14 @@ namespace Simple_Table_Permutation
             else
                 MessageBox.Show("Ошибка чтения данных: данные отсутствуют!");
         }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelpBox helpBox = new HelpBox();
+            helpBox.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            helpBox.ShowDialog();
+        }
+
     }
 
 }
