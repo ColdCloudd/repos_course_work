@@ -10,7 +10,7 @@ namespace Simple_Table_Permutation
         private OpenFileDialog openFileDialog = new OpenFileDialog();
         private SaveFileDialog saveFileDialog = new SaveFileDialog();
 
-        public TablePermutation(User user)
+        public TablePermutation( User user)
         {
             InitializeComponent();
             if (user != null)
@@ -97,7 +97,7 @@ namespace Simple_Table_Permutation
 
         private void личныйКабинетToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PersonalAccountBox personalAccountBox = new PersonalAccountBox(user);
+            PersonalAccountBox personalAccountBox = new PersonalAccountBox(ref user);
             personalAccountBox.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             personalAccountBox.ShowDialog();
         }

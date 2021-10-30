@@ -37,10 +37,10 @@ C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Sim
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\EntityFramework.xml
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\bin\Release\System.Data.SQLite.xml
-C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.csprojAssemblyReference.cache
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.AboutBox.resources
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.Authorization.resources
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.ChangePasswordBox.resources
+C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.HelpBox.resources
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.PersonalAccountBox.resources
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.TablePermutation.resources
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.Properties.Resources.resources
@@ -52,4 +52,3 @@ C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Sim
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.csproj.CopyComplete
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Простая табличная перестановка.exe
 C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Простая табличная перестановка.pdb
-C:\Users\AGENT\source\course_work\repos_course_work\Simple_Table_Permutation\Simple_Table_Permutation\obj\Release\Simple_Table_Permutation.HelpBox.resources

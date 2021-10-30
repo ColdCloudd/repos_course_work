@@ -67,8 +67,7 @@ namespace Simple_Table_Permutation
             }
             string outputText = string.Join("", strOutputArr);
             string key = newRow.ToString() + "-" + newCol.ToString();
-            MyPair pair = new MyPair(outputText, key);
-            return pair;
+            return new MyPair(outputText, key);
         }
 
         public static string TextDecryption(string inputText, string key)

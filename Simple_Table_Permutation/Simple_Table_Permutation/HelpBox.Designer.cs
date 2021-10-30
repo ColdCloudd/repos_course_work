@@ -43,7 +43,7 @@
             this.richTextBoxHelp.Size = new System.Drawing.Size(800, 464);
             this.richTextBoxHelp.TabIndex = 0;
             this.richTextBoxHelp.Text = resources.GetString("richTextBoxHelp.Text");
-            this.richTextBoxHelp.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            
             // 
             // HelpBox
             // 

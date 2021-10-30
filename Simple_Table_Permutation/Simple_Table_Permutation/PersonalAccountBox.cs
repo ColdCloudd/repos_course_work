@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Simple_Table_Permutation
@@ -13,7 +6,7 @@ namespace Simple_Table_Permutation
     public partial class PersonalAccountBox : Form
     {
         private User user;
-        public PersonalAccountBox(User user)
+        public PersonalAccountBox(ref User user)
         {
             InitializeComponent();
             this.user = user;
@@ -29,11 +22,9 @@ namespace Simple_Table_Permutation
 
         private void linkLabelChangePass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ChangePasswordBox changePasswordBox = new ChangePasswordBox(user);
+            ChangePasswordBox changePasswordBox = new ChangePasswordBox(ref user);
             changePasswordBox.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             changePasswordBox.ShowDialog();
         }
-
-        
     }
 }

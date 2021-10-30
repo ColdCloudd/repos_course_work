@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
 using System.IO;
 using System.Data;
 
@@ -25,7 +21,6 @@ namespace Simple_Table_Permutation
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Authorization());
-
         }
     }
 }

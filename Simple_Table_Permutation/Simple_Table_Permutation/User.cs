@@ -8,7 +8,7 @@ namespace Simple_Table_Permutation
         public string id { get; }
         public string username { get; }
         public string login { get; }
-        public string password { get; }
+        public string password { get; set; }
         public string role { get; }
 
         public User() { }

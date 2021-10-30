@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Simple_Table_Permutation
@@ -15,7 +8,7 @@ namespace Simple_Table_Permutation
         private Database DB;
         private User user;
         private bool passwordContainsSpace, passwordContainsEnoughChar;
-        public ChangePasswordBox(User user)
+        public ChangePasswordBox(ref User user)
         {
             InitializeComponent();
             DB = new Database("Data Source=MyDB.db; Version=3");
@@ -142,7 +135,7 @@ namespace Simple_Table_Permutation
 
         private void buttonChangePass_Click(object sender, EventArgs e)
         {
-            if (textBoxNewPass.Text.Trim() != "" && textBoxNewPassRep.Text.Trim() != "" && textBoxOldPass.Text.Trim()!="")
+            if (textBoxNewPass.Text.Trim() != "" && textBoxNewPassRep.Text.Trim() != "" && textBoxOldPass.Text.Trim() != "")
             {
                 if (!passwordContainsSpace)
                 {
@@ -150,10 +143,12 @@ namespace Simple_Table_Permutation
                     {
                         if (textBoxNewPass.Text == textBoxNewPassRep.Text)
                         {
-                            if (user.password == User.GetHash(textBoxOldPass.Text))
+                            if (user.password == User.GetHash(textBoxOldPass.Text)) //////
                             {
-                                if (DB.UpdateUserPassword(user.login, User.GetHash(textBoxNewPass.Text)))
+                                string passwordHash = User.GetHash(textBoxNewPass.Text);
+                                if (DB.UpdateUserPassword(user.login, passwordHash))
                                 {
+                                    user.password = passwordHash;
                                     MessageBox.Show("Пароль успешно изменен!");
                                     this.Hide();
                                 }
